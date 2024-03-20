@@ -60,8 +60,8 @@ l_b.place(x=300, y=100)
 l_c=Label(aken,text="= 0",fg='green',font="Arial 20")
 l_c.place(x=500,y=100)
 
-rewenie_button=Button(aken,text="Решить",command=rewenie,bg='green',font="Arial 20")
-rewenie_button.place(x=600,y=100,width=100,height=40)
+r_button=Button(aken,text="Решить",command=reshenija,bg='green',font="Arial 20")
+r_button.place(x=600,y=100,width=100,height=40)
 
 s_frame=Frame(aken,bg='yellow',height=50)
 s_frame.pack(padx=20,pady=10,fill='x',expand=True)
