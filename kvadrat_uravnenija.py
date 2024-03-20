@@ -67,8 +67,8 @@ s_frame=Frame(aken,bg='yellow',height=50)
 s_frame.pack(padx=20,pady=10,fill='x',expand=True)
 s_title=Label(s_frame,text='Решение',bg='yellow',font="Arial 20")
 s_title.pack(side='top',fill='x')
-s_text=Label(s_frame,text='',bg='yellow',font="Arial 20",anchor='w')
-s_text.pack(side='bottom',fill='x')
+s_text=Label(s_frame,text='',bg='yellow',font="Arial 20")
+s_text.pack(side='bottom')
 
 
 
