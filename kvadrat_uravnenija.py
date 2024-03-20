@@ -8,7 +8,7 @@ def discriminant(a, b, c):
     return result
 def reshenija():
     is_valid=True
-    for entry in [entry_a,entry_b,entry_c]:
+    for entry in [e_a,e_b,e_c]:
         if entry.get():
             entry.config(bg='lightblue')
         else:
@@ -16,9 +16,9 @@ def reshenija():
             is_valid=False
     if is_valid:
         try:
-            a=float(entry_a.get())
-            b=float(entry_b.get())
-            c=float(entry_c.get())
+            a=float(e_a.get())
+            b=float(e_b.get())
+            c=float(e_c.get())
             D=discriminant(a,b,c)
             s_text.config(text=f'Дискриминант = {D:.2f}\n')
             if D>0:
@@ -46,12 +46,12 @@ f_all=Frame(aken,border=10,height=200,width=600)
 l=Label(text="Решение квадратного уравнения",bg="#75cad7",fg="green",font="Castellar 20",height=1)
 l.pack(side=TOP)
 
-entry_a=Entry(aken,width=5,font="Arial 20",bg='lightblue')
-entry_a.place(x=20,y=100,width=50, height=30)
-entry_b=Entry(aken,width=5,font="Arial 20",bg='lightblue')
-entry_b.place(x=200, y=100, width=50, height=30)
-entry_c=Entry(aken,width=5,font="Arial 20",bg='lightblue')
-entry_c.place(x=400,y=100,width=50,height=30)
+e_a=Entry(aken,width=5,font="Arial 20",bg='lightblue')
+e_a.place(x=20,y=100,width=50, height=30)
+e_b=Entry(aken,width=5,font="Arial 20",bg='lightblue')
+e_b.place(x=200, y=100, width=50, height=30)
+e_c=Entry(aken,width=5,font="Arial 20",bg='lightblue')
+e_c.place(x=400,y=100,width=50,height=30)
 
 l_a=Label(aken,text="x**2 +",fg="green", font="Arial 20")
 l_a.place(x=100,y=100)
