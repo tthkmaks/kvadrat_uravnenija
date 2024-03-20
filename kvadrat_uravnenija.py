@@ -1,18 +1,12 @@
 ﻿from tkinter import *
 from tkinter import messagebox
 from math import sqrt
-def discriminant(a,b,c):
-    return b**2-4*a*c
-def FromEntryToLabel(event):
-    tekst=e.get()
-    l.configure(text=tekst)
-def valik():
-    arv=var.get()
-    e.delete(0,END) #budet udaljat pred. znachenija
-    e.insert(END,arv)
-showflag=False
 
-def rewenie():
+
+def discriminant(a, b, c):
+    result = b**2 - 4*a*c
+    return result
+def reshenija():
     is_valid=True
     for entry in [entry_a,entry_b,entry_c]:
         if entry.get():
@@ -26,7 +20,7 @@ def rewenie():
             b=float(entry_b.get())
             c=float(entry_c.get())
             D=discriminant(a,b,c)
-            s_text.config(text=f'Дискриминант (D) = {D:.2f}\n')
+            s_text.config(text=f'Дискриминант = {D:.2f}\n')
             if D>0:
                 x1=(-b+sqrt(D))/(2*a)
                 x2=(-b-sqrt(D))/(2*a)
